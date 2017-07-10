@@ -27,7 +27,20 @@ printNews ()
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	recipesArray.forEach(function(e) {
+		if (e.highlighted==true) {
+			renderRecipe(e);
+		}
+	});
 }
+/* ETAPA 3: JQUERY
+$(recipesArray).each(function(i, elem){
+	if(elem.highlighted == true) {
+		renderRecipe(e);
+	}
+});
+    
+*/
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
