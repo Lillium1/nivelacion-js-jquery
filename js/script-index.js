@@ -8,6 +8,18 @@ $(document).ready( function(){
 
 });
 
+// ETAPA 2: AGREGAR A LA ETIQUETA P "NUEVAS RECETAS"
+function printNews () {
+	$(".callout-news").children()[1].append("NUEVAS RECETAS");
+}
+printNews ()
+
+/* ETAPA 2: OTRA ALTERNATIVA
+function printNews () {
+	$(".callout-news p").append("hola");
+}
+printNews ()
+*/
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
